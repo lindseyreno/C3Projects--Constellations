@@ -1,5 +1,20 @@
 body {
-  background: linear-gradient(#000, #000, #010536);
+  background-image: url(images/star_rotate_left.svg),
+                    url(images/star_rotate_right.svg),
+                    url(images/star_scale.svg),
+                    linear-gradient(#000, #000, #010536);
+  background-repeat: no-repeat,
+                     no-repeat,
+                     no-repeat,
+                     repeat;
+  background-position: 6% 15%,
+                       55% 25%,
+                       70% 10%,
+                       center;
+  background-size: 2em 2em,
+                   2.5em 2.5em,
+                   3em 3em,
+                   195em;
 }
 
 h1 {
@@ -9,18 +24,17 @@ h1 {
 }
 
 .const {
+  postion: relative;
   margin: 1em 3em 5em 7em;
-  position: relative;
 }
 
-.const.pegasus{
-  top: 6em;
+.const.pegasus {
+  position: relative;
+  top: 4em;
 }
 
 .const.aquila {
-  top: 2em;
-}
-
-.const.cygnus {
-  top: 0.5em;
+  position: relative;
+  bottom: 4em;
+  margin: 1em 3em 5em 5em;
 }
