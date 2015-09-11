@@ -54,3 +54,11 @@ h1 {
 .const.pegasus.move {
   animation: pegasus-move 5.5s ease-out .5s forwards;
 }
+
+@keyframes aquila-move {
+  100% { transform: translate(-49em,24em) scale(1.5); }
+}
+
+.const.aquila.move {
+  animation: aquila-move 6s ease-out .5s forwards;
+}
