@@ -46,3 +46,11 @@ h1 {
 .const.cygnus.move {
   animation: cygnus-move 4s ease-out .5s forwards;
 }
+
+@keyframes pegasus-move {
+  100% { transform: translate(-25em,16em) scale(1.5); }
+}
+
+.const.pegasus.move {
+  animation: pegasus-move 5.5s ease-out .5s forwards;
+}
