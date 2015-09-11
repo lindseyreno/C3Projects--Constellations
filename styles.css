@@ -8,7 +8,7 @@ body {
                      no-repeat,
                      repeat;
   background-position: 6% 15%,
-                       55% 25%,
+                       55% 20%,
                        70% 10%,
                        center;
   background-size: 2em 2em,
@@ -29,6 +29,18 @@ img {
   margin: 1em 3em 5em 7em;
 }
 
+h4 {
+  color: #92939C;
+  font: italic 1.5em arial, sans-serif;
+  text-align: center;
+}
+
+p {
+  color: #92939C;
+  font: italic 1em arial, sans-serif;
+  text-align: center;
+}
+
 .const.pegasus {
   position: relative;
   top: 4em;
@@ -40,26 +52,32 @@ img {
   margin: 1em 3em 5em 5em;
 }
 
-@keyframes cygnus-move {
-  100% { transform: translate(2em,19em) scale(1.5); }
+.info {
+  width: 30em;
+  position: relative;
+  left: 44em;
 }
 
 .const.cygnus.move {
   animation: cygnus-move 4s ease-out .5s forwards;
 }
 
-@keyframes pegasus-move {
-  100% { transform: translate(-24em,16em) scale(1.5); }
-}
-
 .const.pegasus.move {
   animation: pegasus-move 5.5s ease-out .5s forwards;
 }
 
-@keyframes aquila-move {
-  100% { transform: translate(-49em,24em) scale(1.5); }
-}
-
 .const.aquila.move {
   animation: aquila-move 6s ease-out .5s forwards;
+}
+
+@keyframes cygnus-move {
+  100% { transform: translate(2em,19em) scale(1.4); }
+}
+
+@keyframes pegasus-move {
+  100% { transform: translate(-24em,16em) scale(1.5); }
+}
+
+@keyframes aquila-move {
+  100% { transform: translate(-49em,24em) scale(1.5); }
 }
