@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#939598;stroke:#FFFDFD;stroke-miterlimit:10;}
+</style>
+<path id="path95855-5-2" class="st0" d="M29.8,34.5L25,28.3l-4.6,6.3l1.8-7.2L13.8,29l7.3-4l-7.4-3.9l8.5,1.6l-2-7.2l4.7,6.2
+	l4.6-6.3l-1.8,7.2l8.5-1.7l-7.3,4l7.4,3.9l-8.5-1.6L29.8,34.5z">
+	<animateTransform
+	  attributeName="transform"
+	  attributeType="XML"
+	  type="scale"
+	  from="0.25" to="0.9"
+	  begin="0s" dur="10s"
+	  values="0.25; 0.9; 0.25"
+	  keyTimes="0; 0.5; 1"
+	  repeatCount="indefinite"
+	  additive="sum" />
+	<animateTransform
+	  attributeName="transform"
+	  attributeType="XML"
+    type="rotate"
+    from="0 25 25" to="360 25 25"
+    begin="0s" dur="5s"
+ 	  fill="freeze"
+    repeatCount="indefinite"
+    additive="sum" />
+</path>
+</svg>
