@@ -38,3 +38,11 @@ h1 {
   bottom: 4em;
   margin: 1em 3em 5em 5em;
 }
+
+@keyframes cygnus-move {
+  100% { transform: translate(2em,19em) scale(1.5); }
+}
+
+.const.cygnus.move {
+  animation: cygnus-move 4s ease-out .5s forwards;
+}
