@@ -1,0 +1,26 @@
+body {
+  background: linear-gradient(#000, #000, #010536);
+}
+
+h1 {
+  color: #92939C;
+  font: italic 2.5em arial, sans-serif;
+  text-align: center;
+}
+
+.const {
+  margin: 1em 3em 5em 7em;
+  position: relative;
+}
+
+.const.pegasus{
+  top: 6em;
+}
+
+.const.aquila {
+  top: 2em;
+}
+
+.const.cygnus {
+  top: 0.5em;
+}
