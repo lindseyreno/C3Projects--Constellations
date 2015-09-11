@@ -59,15 +59,15 @@ p {
 }
 
 .const.cygnus.move {
-  animation: cygnus-move 4s ease-out .5s forwards;
+  animation: cygnus-move 4s ease-out forwards;
 }
 
 .const.pegasus.move {
-  animation: pegasus-move 5.5s ease-out .5s forwards;
+  animation: pegasus-move 5.5s ease-out forwards;
 }
 
 .const.aquila.move {
-  animation: aquila-move 6s ease-out .5s forwards;
+  animation: aquila-move 6s ease-out forwards;
 }
 
 @keyframes cygnus-move {
