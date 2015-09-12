@@ -18,8 +18,10 @@ $(document).ready( function() {
     });
   };
 
-  moveTo("cygnus");
-  moveTo("pegasus");
-  moveTo("aquila");
+  var constellations = ["cygnus", "pegasus", "aquila"];
 
+  for (var i = 0; i < constellations.length; i++) {
+    moveTo(constellations[i]);
+  };
+  
 });
