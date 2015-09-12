@@ -41,12 +41,12 @@ p {
   text-align: center;
 }
 
-.const.pegasus {
+.pegasus {
   position: relative;
   top: 4em;
 }
 
-.const.aquila {
+.aquila {
   position: relative;
   bottom: 4em;
   margin: 1em 3em 5em 5em;
@@ -58,16 +58,28 @@ p {
   left: 44em;
 }
 
-.const.cygnus.move {
+.cygnus.move {
   animation: cygnus-move 4s ease-out forwards;
 }
 
-.const.pegasus.move {
+.pegasus.move {
   animation: pegasus-move 5.5s ease-out forwards;
 }
 
-.const.aquila.move {
+.aquila.move {
   animation: aquila-move 6s ease-out forwards;
+}
+
+.cygnus.back {
+  animation: cygnus-move 4s ease-out reverse;
+}
+
+.pegasus.back {
+  animation: pegasus-move 5.5s ease-out reverse;
+}
+
+.aquila.back {
+  animation: aquila-move 5.5s ease-out reverse;
 }
 
 @keyframes cygnus-move {
