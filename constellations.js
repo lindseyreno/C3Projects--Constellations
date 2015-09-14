@@ -11,31 +11,28 @@ $(document).ready( function() {
 
 
   $("body").on("click", ".cygnus", function() {
-    var image = $(".cygnus").clone().removeClass("back");
-    $(".cygnus").remove();
-    image.insertAfter("h1");
-    $(".cygnus").addClass("move");
-
+    moveClass("cygnus", "h1");
     fadeInfoIn("cygnus");
   });
 
   $("body").on("click", ".pegasus", function() {
-    var image = $(".pegasus").clone().removeClass("back");
-    $(".pegasus").remove();
-    image.insertAfter($(".cygnus"));
-    $(".pegasus").addClass("move");
-
+    moveClass("pegasus", ".cygnus");
     fadeInfoIn("pegasus");
   });
 
   $("body").on("click", ".aquila", function() {
-    var image = $(".aquila").clone().removeClass("back");
-    $(".aquila").remove();
-    image.insertAfter($(".pegasus"));
-    $(".aquila").addClass("move");
-
+    moveClass("aquila", ".pegasus");
     fadeInfoIn("aquila");
   });
+
+  resetView();
+
+  function moveClass(name, placement) {
+    var image = $("." + name).clone().removeClass("back");
+    $("." + name).remove();
+    image.insertAfter($(placement));
+    $("." + name).addClass("move");
+  }
 
   function fadeInfoIn(name) {
     var capitalized = name.charAt(0).toUpperCase() + name.substring(1);
@@ -44,31 +41,31 @@ $(document).ready( function() {
     reset.hide().text("Reset").fadeIn(3700);
   }
 
-  resetView();
-
   function resetView() {
     $("body").on("click", ".reset", function() {
       if (headline.text() === "Cygnus") {
-        var image = $(".cygnus").clone().removeClass("move");
-        $(".cygnus").remove();
-        image.insertAfter("h1");
-        $(".cygnus").addClass("back");
+        backClass("cygnus", "h1")
       } else if (headline.text() === "Pegasus") {
-        var image = $(".pegasus").clone().removeClass("move");
-        $(".pegasus").remove();
-        image.insertAfter($(".cygnus"));
-        $(".pegasus").addClass("back");
+        backClass("pegasus", ".cygnus")
       } else if (headline.text() === "Aquila") {
-        var image = $(".aquila").clone().removeClass("move");
-        $(".aquila").remove();
-        image.insertAfter($(".pegasus"));
-        $(".aquila").addClass("back");
+        backClass("aquila", ".pegasus")
       }
-      headline.fadeOut(3700);
-      paragraph.fadeOut(3700);
-      reset.fadeOut(3700);
+
+      fadeInfoOut();
     })
   }
 
+  function backClass(name, placement) {
+    var image = $("." + name).clone().removeClass("move");
+    $("." + name).remove();
+    image.insertAfter(placement);
+    $("." + name).addClass("back");
+  }
+
+  function fadeInfoOut() {
+    headline.fadeOut(3700);
+    paragraph.fadeOut(3700);
+    reset.fadeOut(3700);
+  }
 
 });
